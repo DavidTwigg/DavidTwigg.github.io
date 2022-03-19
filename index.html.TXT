@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>David Twigg</h1>
+I'm David Twigg, a maths and Physics teacher, originally from England, but now living in Krakow, Poland.
+<p>I'm hosted with GitHub Pages.</p>
+</body>
+</html>
