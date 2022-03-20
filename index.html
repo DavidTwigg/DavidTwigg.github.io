@@ -1,38 +1,71 @@
-<!DOCTYPE html>
-<html>
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
-<style>
-    .custom-restricted-width {
-        /* To limit the menu width to the content of the menu: */
-        display: inline-block;
-        /* Or set the width explicitly: */
-        /* width: 10em; */
-    }
-</style>
-<div class="pure-menu custom-restricted-width">
-    <span class="pure-menu-heading">Teaching</span>
-    <ul class="pure-menu-list">
-        <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">IB Phyics</a>
-        </li>
-        <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">IB Maths</a>
-        </li>
-        <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">iGCSE Physics</a>
-        </li>
-        <li class="pure-menu-heading">Other Projects</li>
-        <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">Book Translation</a>
-        </li>
-        <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">Data Plotter</a>
-        </li>
-    </ul>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
+    <link rel="stylesheet" href="/css/pure/pure-min.css">
+    <link rel="stylesheet" href="/layouts/side-menu/styles.css">
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#home">Home</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#IBPhysics" class="pure-menu-link">IB Physics</a></li>
+                <li class="pure-menu-item"><a href="#IBMaths" class="pure-menu-link">IB Maths</a></li>
+                <li class="pure-menu-item"><a href="#iGCSE Physics" class="pure-menu-link">IGCSE Physics</a></li>
+
+                <li class="pure-menu-item menu-item-divided pure-menu-selected">
+                    <a href="#" class="pure-menu-link">Services</a>
+                </li>
+
+                <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>David Twigg</h1>
+            <h2>Maths and Physics teacher in Krakow</h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">How to use this layout</h2>
+            <p> Prior to teaching, I ran a craft brewery and pub in Krakow. Prior to that I was a particle physicist at the Univeristy of Cambridge.
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-  <body>
-<h1>David Twigg</h1>
-<p>I'm David Twigg, a maths and Physics teacher, originally from England, but now living in Krakow, Poland.</p>
-<p>I'm hosted with GitHub Pages.</p>
+
+<script src="/js/ui.js"></script>
+
 </body>
 </html>
+ 
